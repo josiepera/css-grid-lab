@@ -6,8 +6,64 @@ body {
   padding: 0 25px 25px 25px;
 }
 
+.container > .grid > div{
+  /*background-color: #333333;*/
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+  color: black;
+  word-wrap: break-word;
+}
+
 .grid {
+  border: 2px black solid;
   max-width: 1000px;
+  height: 100vh;
   display: grid;
   margin: 50px auto;
+  grid-template-areas:
+    'E E E E'
+    'E E E E'
+    'T T H H'
+    'T T H H'
+    'L N H H'
+    'L N M R'
+    'F F M R'
+    'F F B R'
+}
+.explicit{
+  grid-area: E;
+}
+.explicit img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.top-left{
+  grid-area: T;
+}
+.top-right{
+  grid-area: H;
+}
+.mondadori{
+  grid-area: L;
+}
+.contro{
+  grid-area: N;
+}
+.come{
+  grid-area: F;
+}
+.dopo{
+  grid-area: M;
+}
+.lettera{
+  grid-area: B;
+}
+.libri{
+  grid-area: R;
+}
+.libri img{
+  max-width: 100%;
+  max-height: 57%;
 }
